@@ -1,0 +1,269 @@
+:root {
+    --primary-color: #ffffff;
+    --background-color: #266E86;
+    --font-family: 'Irish Grover', sans-serif;
+}
+body{
+    margin:0;
+    padding:40px;
+    background:var(--background-color);
+    font-family:sans-serif;
+}
+.container{
+    background-color: #ffffff;
+    min-height:100vh;
+}
+header {
+    background-color: var(--background-color);
+    padding: 40px 0;
+}
+.hero{
+    background:white;
+    border-radius:30px;
+    margin-top:30px;
+    padding:30px 50px 0 50px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.hero-image img{
+    width:400px;
+    display:block;
+}
+.kotak {
+    background-color: var(--primary-color);
+    padding: 200px;
+    margin: -50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.teks {
+   margin:0;
+   font-family: sans-serif;
+   color: #266E86;
+   text-align: center;
+   font-size: 40px;
+}
+.hero-text{
+    text-align:center;
+    max-width:500px;
+}
+.hero-text h1{
+    color:#266E86;
+    font-size:90px;
+    margin-bottom:10px;
+    font-family:var(--font-family);
+}
+.hero-text p{
+    color:#266E86;
+    font-size:20px;
+    line-height:1.5;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.polo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nav-links{
+    background:white;
+    padding:15px 50px;
+    border-radius:50px;
+    display:flex;
+    gap:80px;
+}
+.nav-links a{
+    text-decoration:none;
+    color:#266E86;
+    font-family:'Irish Grover';
+    transition:all 0.5s ease;
+}
+.nav-links a:hover{
+    transform:translateY(-3px);
+}
+.hero-text{
+    max-width:500px;
+    display:flex;
+    flex-direction:column;
+    align-items:flex-end;
+    text-align:right;
+}
+.hero-text h1{
+    font-family:var(--font-family);
+    color:#266E86;
+    font-size:90px;
+    margin-bottom:10px;
+}
+.hero-text button{
+    margin-top:20px;
+    background:#266E86;
+    color:white;
+    border:none;
+    border-radius:50px;
+    padding:15px 60px;
+    font-family:var(--font-family);
+    cursor:pointer;
+    transition: background-color 0.5s ease;
+}
+.hero-text button:hover{
+    background:#0d313d;
+}
+h2 {
+    color: var(--primary-color);
+    font-family: var(--font-family);
+    font-size: 70px;
+    font-weight: 700;
+    margin: 0;
+}
+h3{
+  color: var(--secondary-color);
+}
+p {
+    color: var(--primary-color);
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.besel{
+    font-size: 85px;
+    font-family: var(--font-family);
+    color: #0d313d;
+    text-align: center;
+}
+.cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    margin-bottom:40px;
+    flex-wrap:wrap;
+}
+.card{
+    width:220px;
+    background:white;
+    border-radius:15px;
+    padding:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+    transition:all 0.4s ease;
+}
+.card:hover{
+    transform:translateY(-3px);
+}
+.card img{
+    width:70%;
+    padding-left: 30px;
+    height:220px;
+    object-fit:contain;
+    box-shadow: black;
+}
+.card p{
+    color:#143d4c;
+    margin-top:10px;
+    font-size:20px;
+    text-align: center;
+}
+.garispot{
+    width:80%;
+    max-width:1200px;
+    margin:40px auto;
+    background:#123f52;
+    border-radius:50px;
+    padding:20px 0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.garispot h3{
+    margin:0;
+    color:white;
+    font-family:'Irish Grover', cursive;
+    font-size:40px;
+    font-weight:normal;
+}
+@media (max-width: 768px){
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        padding:30px;
+    }
+    .hero-text{
+        align-items:center;
+        text-align:center;
+    }
+    .hero-text h1{
+        font-size:60px;
+    }
+    .nav-links{
+        gap:20px;
+        padding:10px 20px;
+    }
+    .cards{
+        flex-direction:column;
+        align-items:center;
+    }
+    .btn-pottery{
+        width:90%;
+    }
+}
+@media (max-width: 480px){
+    .hero-text h1{
+        font-size:40px;
+    }
+    .hero-text p{
+        font-size:16px;
+    }
+    .teks{
+        font-size:24px;
+    }
+    .card{
+        width:90%;
+    }
+    .best-seller h2{
+        font-size:40px;
+    }
+}
+.back {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+}
+.b {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #333333; 
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+.b::before {
+    content: "←"; 
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.b:hover {
+    background-color: #000000; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+}
+
+.b:hover::before {
+    transform: translateX(-4px); 
+}
+
+.b:active {
+    transform: scale(0.98); 
+}

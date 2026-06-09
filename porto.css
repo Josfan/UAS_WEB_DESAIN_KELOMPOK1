@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root{
+    --primary-color: #ffffff;
+    --secondary-color: #855431;
+    --third-color: #FFE3CE;
+    --quary-color: #2F2F2F;
+    --font-family: "Nunito", sans-serif;
+    --font-header: "Comic Relief", system-ui;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color:  var(--secondary-color);
+    border-radius: 50px;
+    margin: 35px auto;
+    width: 1150px;
+}
+nav p{
+    font-family: var(--font-header);
+    font-weight: bold;
+    font-size: 25px;
+}
+nav p a {
+    color: var(--third-color);
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block; 
+}
+
+nav p a:hover {
+    color: var(--primary-color); 
+    transform: translateY(-3px); 
+}
+.head-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 120px;
+}
+.head-kiri{
+    margin-bottom: 250px;
+}
+.head-kiri h1{
+    font-family: var(--font-header);
+    color: var(--secondary-color);
+    font-size: 70px;
+    width: 860px;
+}
+.head-kiri p{
+    font-family: var(--font-family);
+    color: var(--quary-color);
+    font-size: 20px;
+    width: 660px;
+}
+.head-kiri button {
+    background-color: var(--third-color);
+    color: var(--quary-color);
+    font-family: var(--font-header);
+    margin-top: 10px;
+    font-weight: 900;
+    font-size: large;
+    padding: 15px 40px;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer; 
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.head-kiri button:hover {
+    background-color: var(--secondary-color);
+    color: var(--third-color);
+    transform: translateY(-4px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); 
+}
+.head-kiri button:active {
+    transform: translateY(-1px); 
+}
+.head-kanan {
+    margin-right: 30px;
+    transition: transform 0.4s ease;
+}
+.head-kanan:hover {
+    transform: translateX(20px);
+    margin-right: -10px;
+}
+.about{
+    text-align: center;
+    margin: 10px;
+}
+.about h1{
+    font-family: var(--font-header);
+    color: var(--secondary-color);
+    font-size: 70px;
+    margin-bottom: 30px;
+}
+.about p{
+    font-family: var(--font-family);
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 800px;
+    margin: 0 auto;
+}
+.porto{
+    text-align: center;
+    margin: 10px;
+}
+.porto h1{
+    font-family: var(--font-header);
+    color: var(--secondary-color);
+    font-size: 70px;
+    margin-bottom: 60px;
+    margin-top: 190px;
+}
+.porto .image{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+    gap:70px;
+}
+.porto img{
+    width: 300px;
+}
+.porto .image img {
+    width: 300px;
+    border-radius: 15px; 
+    transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+    filter: grayscale(50%);
+}
+
+.porto .image img:hover {
+    transform: scale(1.05); 
+    box-sizing: border-box;
+    box-shadow: 0 15px 30px rgba(133, 84, 49, 0.3); 
+    filter: brightness(1.10) grayscale(0%); 
+}
+.contact{
+    text-align: center;
+    margin: 10px;
+}
+.contact h1{
+    font-family: var(--font-header);
+    color: var(--secondary-color);
+    font-size: 70px;
+    margin-bottom: 60px;
+    margin-top: 190px;
+}
+.shape{
+    position: static;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 20px 30px;
+    border-radius: 50px;
+    box-shadow: 0 30px var(--secondary-color);
+    width: 1000px;
+    margin: 0 auto;
+}
+.contact-kiri{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.contact-kiri p{
+    font-family: var(--font-family);
+    font-size: 30px;
+}
+.sosial{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.color{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+.cream{
+    background-color: var(--third-color);
+    width: 50px;
+    height: 50px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.403)
+}
+.coklat{
+    background-color: var(--secondary-color);
+    width: 50px;
+    height: 50px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.403)
+}
+.putih{
+    background-color: var(--primary-color);
+    width: 50px;
+    height: 50px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.403)
+}
+.abu{
+    background-color: var(--quary-color);
+    width: 50px;
+    height: 50px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.403)
+}
+.cream, .coklat, .putih, .abu {
+    width: 50px;
+    height: 50px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.403);
+    border-radius: 8px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.cream:hover, .coklat:hover, .putih:hover, .abu:hover {
+    transform: scale(1.15) translateY(-5px);
+    box-shadow: 6px 12px 18px rgba(0, 0, 0, 0.3);
+}
+.shape .sosial img {
+    animation: lompat 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+    width: 40px;
+}
+.shape .sosial img:hover {
+    animation-play-state: paused;
+    transform: translateY(-20px) scale(1.1);
+    filter: brightness(1.2); 
+}
+.shape .contact-kanan {
+    animation: lompat 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate;
+    
+    transition: transform 0.2s ease;
+}
+
+@keyframes lompat {
+    0% {
+        transform: translateY(0) scaleY(1); /* Di tanah, bentuk normal */
+    }
+    40% {
+        transform: translateY(-4px) scaleY(1.02); /* Mulai naik, agak ketarik ke atas */
+    }
+    100% {
+        transform: translateY(-25px) scaleY(0.98); /* Di udara (puncak lompatan) */
+    }
+}
+footer{
+    background: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 35px;
+    margin: 90px auto auto auto;
+}
+footer p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+.back {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+}
+.b {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #333333; 
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+}
+.b::before {
+    content: "←"; 
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.b:hover {
+    background-color: #000000; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); 
+}
+
+.b:hover::before {
+    transform: translateX(-4px); 
+}
+
+.b:active {
+    transform: scale(0.98); 
+}

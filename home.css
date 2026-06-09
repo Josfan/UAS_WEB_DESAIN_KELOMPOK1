@@ -1,0 +1,369 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400,300&display=swap');
+
+:root {
+    --primary-color: #04132F;
+    --secondary-color: #5477BA;
+    --background-color: #ffffff;
+    --font-family: 'Satoshi', sans-serif;
+}
+*{
+    font-family: var(--font-family);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    overflow-x: hidden;
+}
+
+.content-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 30px 40px;
+    padding-bottom: 0;
+}
+
+header {
+    background-color: white;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0 6px 0 rgba(4, 19, 47, 0.25);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1px 30px;
+    border-radius: 50px;
+    color: var(--background-color);
+    font-family: var(--font-family);
+    font-weight: 100;
+}
+
+#blue {
+    color: #ACC8FF;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-family);
+}
+
+nav .nav-links {
+    display: flex;
+    gap: 30px;
+    margin-right: 40px;
+}
+
+nav .nav-links a {
+    color: var(--background-color);
+    font-family: var(--font-family);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.nav-links a:hover {
+    text-shadow: 
+        0 0 5px var(--secondary-color), 
+        0 0 10px var(--secondary-color), 
+        0 0 20px var(--secondary-color), 
+        0 0 40px var(--secondary-color);
+    transition: 0.3s;
+}
+
+.head1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.head1-judul {
+    font-size: 56px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.head1-kiri h1 {
+    font-family: var(--font-family);
+    font-size: 70px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+.header-foto {
+    width: 500px;
+    height: auto;
+    border-radius: 20px;
+    position: relative;
+    bottom: 0;
+    top:54px;
+}
+
+.blue1 {
+    color: var(--secondary-color);
+}
+
+.headtitle {
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--primary-color);
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+.tombolproyek {
+    background-color: #04132F;
+    color: #F9F2FA;
+    border: none;
+    border-radius: 12px;
+    padding: 16px 48px;
+    font-family: 'Satoshi-Bold', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.tombolproyek:hover {
+    background-color: #274785;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(39, 71, 133, 0.3);
+}
+
+.header2 {
+    font-family: var(--font-family);
+    text-align: center;
+    font-size: 40px;
+    color: var(--secondary-color);
+    margin: 50px 0 130px 0;
+    text-transform: uppercase;
+}
+
+.about-box {
+    background-color: #04132F;
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 35px;
+    gap: 40px;
+    margin-bottom: 80px;
+    box-shadow: 0px 5px 0px rgba(4, 19, 47, 0.25);
+}
+
+.about-text p {
+    color: #F9F2FA;
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 550px;
+    margin-bottom: 30px;
+}
+
+.about-btn {
+    background-color: #274785;
+    color: #F9F2FA;
+    border: none;
+    border-radius: 10px;
+    padding: 14px 22px;
+    font-family: var(--font-family);
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.about-btn:hover {
+    background-color: #183369;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(172, 200, 255, 0.3);
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 520px;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.layanan {
+    padding: 80px 0;
+}
+
+.layanan-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.layanan-card {
+    flex: 1;
+    padding: 30px 25px; /* reduced height */
+    min-height: 140px;  /* forces thinner box */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #F9F2FA;
+    text-align: center;
+}
+.layanan-card:hover{
+  transform: translateY(-8px);
+        box-shadow:
+        6px 0px 0px #04132F,
+        0px 6px 0px #04132F;
+}
+
+.layanan-card img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.layanan-head {
+    font-family: 'Satoshi-Bold', sans-serif;
+    font-size: 20px;
+    color: #04132F;
+    margin-bottom: 12px;
+}
+
+.layanan-body {
+      margin: 0 auto;
+}
+.layanan-body-1 {
+    font-family: 'Satoshi-variable', sans-serif;
+    text-align: left;
+    width: 400px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.layanan-card a {
+    font-family: 'Satoshi-Medium', sans-serif;
+    text-decoration: none;
+    color: #5477BA;
+    font-size: 16px;
+}
+
+.layanan-card a:hover {
+    text-decoration: underline;
+}
+
+.testimonial {
+    width: 100%;
+    padding: 100px 0;
+    box-sizing: border-box;
+    margin-top: 50px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.testimonial-card {
+    flex: 1;
+    background: #0d1b3f;
+    color: white;
+    padding: 80px 25px 40px;
+    border-radius: 30px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    min-width: 280px;
+}
+
+.profile-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testi-name {
+    margin-top: 70px;
+    font-family: 'Satoshi-Medium', sans-serif;
+    font-size: 28px;
+}
+
+.stars {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+.testi-content {
+    margin-top: 20px;
+    font-family: 'Satoshi-Variable', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #ffffff;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.9;
+}
+
+.social-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.social-links img {
+  filter: grayscale(50%);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+.footer1 {
+    background-color: #04132F;
+    color: #F9F2FA;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin: 0 0px 0px 0px;
+
+  
+}
+
+.footer1 h2 {
+    font-family: 'Satoshi-Variable', sans-serif;
+    font-size: 32px;
+}
